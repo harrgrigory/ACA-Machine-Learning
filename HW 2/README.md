@@ -1,2 +1,2 @@
 # HW 2: NumPy & Matplotlib #
-Solving NumPy and Matplotlib exercies
+Solving NumPy and Matplotlib exercises
