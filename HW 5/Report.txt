@@ -1,0 +1,24 @@
+Classification with SVM and KNN:
+
+EDA:
+Overall, the data contained recipe IDs, Ingredients and Cuisine labels. The task was to predict a cuisine having the IDs and Ingredients.
+First, I conducted Exploratory Data Analysis (EDA) to investigate the data a bit. In general, there were 20 classes with Italian being the most prominent cuisine,
+followed by Mexican and Southern US cuisines (the bar-chart for cuisines can be found in the ipynb). The distribution of ingredients showed the following.
+
+Pre-processing:
+Numerous ingredients, some of them having noise in it such as punctuations, escape unicode characters, parentheses with enclosed strings, and food descriptions (e.g. big).
+Oddly, there are recipes containing only 1 ingredients. For those recipes, there were 2 options either to drop all/some of them or to keep them as they are.
+I decided to keep them, as they could have tremendous impact on the learning process with some ingredients specific to a cuisine.
+
+Machine Learning Model:
+The task was to use SVM and KNN algorithms to perform the classification. After performing GridSearch, it was decided to choose the hyper-parameter C = 3.55.
+The cross-validation with 5 folds showed an accuracy of 0.81. (Anomalies detected and described in further work)
+
+Finally, performing KNN with 4 neighbors (manually picked after trying a few values) showed an accuracy of 0.72.
+
+In comparison, KNN was much faster than SVM, but depicted less accurate results.
+
+Further work:
+It is worth to dive more into data with thorough EDA to explore the dataset even further. An anomaly was detected performing SVM with and without pre-processing step.
+Strangely, without performing pre-processing the SVM rendered slightly accurate results of 0.81124 (an investigation needed). Also, it is worth to run Logistic Regression
+algorithm as it may render meaningful results.
