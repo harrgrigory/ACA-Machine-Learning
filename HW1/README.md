@@ -1,3 +1,3 @@
-# HW 1: Implementing ETL an Pipline 
+# HW 1: Implementing an ETL Pipline 
 Scraping Cryptocurrency (Coins) data from Yahoo Finance #
 
